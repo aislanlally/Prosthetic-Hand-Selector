@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head><title>Prosthetic Hand Selector LogIn Service</title></head><body>
+ 
+ <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+</head>
+ 
+
+<h1 align="center"> <font face="verdana" color="blue"> Prosthetic Hand Selector</font></h1>
+<hr />
+<h2 align="center"><font size="5" face="arial" color="blue">Record System</font></h2>
+<hr />
+
+<div class = "divForm1">
+  <form action="" method="post" name= "form1">
+    <br />
+    Username:
+    <br>
+    <input type="text" value= "" name="username" >
+    <br>
+    Password:
+    <br>
+    <input type="password" value= "" name="pd" >
+    <br>
+    <input type="checkbox" name="donotcache" value="1"> Don't Remember Login    
+    <br><br>
+    <input type="button" value="Log In" name = "cf" onclick="javascript:check()">
+  </form> 
+</div>
+
+
+<hr />
+<div class = "divForm2">
+  <br>
+  Not Certified User? (Just want to upload hand information)
+  <br>
+  <input type="button" value="Upload" name = "cf" onclick=upload.html>
+</div>
+
+
+<script language="javascript">
+function check()
+{
+ 
+ if(document.form1.username.value=="m")
+  {
+    if(document.form1.pd.value=="m")
+      {
+       document.location="Manager.html";
+      }
+    else
+      {
+       alert("Wrong password!")
+      }
+  }
+
+ if(document.form1.username.value=="o")
+  {
+    if(document.form1.pd.value=="o")
+      {
+       document.location="Owner.html";
+      }
+    else
+      {
+       alert("Wrong password!")
+      }
+  }
+
+
+}
+
+
+</script>
+</body>
+</html>
+
+
+
